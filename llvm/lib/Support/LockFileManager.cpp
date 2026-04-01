@@ -199,7 +199,7 @@ Expected<bool> LockFileManager::tryLock() {
                                    "failed to create lock directory " + Dir);
       }
 
-      // Retry creating lock file
+      // Retry creating lock file.
       UniqueLockFileName = LockFileName;
       UniqueLockFileName += "-%%%%%%%%";
 
