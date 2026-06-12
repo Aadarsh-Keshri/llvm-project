@@ -1688,7 +1688,7 @@ void driver::modules::runModulesDriver(
     return;
   createAndConnectRoot(Graph);
 
-  //Start implementing code for Context Hash
+  // Start implementing code for Context Hash algo
 
   Diags.Report(diag::remark_printing_module_graph);
   if (!Diags.isLastDiagnosticIgnored())
