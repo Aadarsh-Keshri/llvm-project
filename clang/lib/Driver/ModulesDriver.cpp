@@ -1688,6 +1688,8 @@ void driver::modules::runModulesDriver(
     return;
   createAndConnectRoot(Graph);
 
+  //Start implementing code for Context Hash
+
   Diags.Report(diag::remark_printing_module_graph);
   if (!Diags.isLastDiagnosticIgnored())
     llvm::WriteGraph<const CompilationGraph *>(llvm::errs(), &Graph);
